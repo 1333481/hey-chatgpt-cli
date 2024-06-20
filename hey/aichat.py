@@ -4,6 +4,7 @@ from hey.prompt import swallow_yaml
 from hey.prompt import syntax_highlighter
 import tiktoken
 
+openai.base_url = "https://api.pawan.krd/v1/chat/completions"
 messages = [
     {"role": "system", "content": "You are called hey. You can help with questions about the command line, programming, or general questions."}
 ]
